@@ -61,61 +61,63 @@ header{
     background-color: var(--bo_rojoFuerte);
 }
 
+#resultado{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 #tarjetas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    width: 100%;
+    max-width: 1260px;
+    gap: 50px;
 }
 
-#prueba{
+.prueba{
     height: 325px;
     width: 277px;
     background-color: var(--text_claro);
     border-radius: 20px;
     padding: 32px;
-    padding-right: 60px;
 }
 
-#prueba .nombre{
+.prueba .nombre{
     font-size: 1.5em;
     color: var(--text_medio);
-    margin-right: 35px;
 }
 
-#prueba .nombre sup{
+.prueba .nombre sup{
     font-size: 1rem;
     padding: 0.2em 0.4em;
     border-radius: 30px;
     background-color: var(--naranja);
     color: var(--text_claro);
     text-transform: uppercase;
+    margin: 10px;
 }
 
-#prueba .temperatura{
+.prueba .temperatura{
     font-size: 5em;
     font-weight: bolder;
-    margin-right: 50px;
 }
 
-#prueba .temperatura sup{
+.prueba .temperatura sup{
     font-size: 2rem;
     font-weight: 550;
-    margin-left: -50px;
 }
 
-#prueba .imagen{
+figcaption{
     text-transform: uppercase;
     font-style: 1.2em;
     color: var(--text_medio);
-    width: 100px;
-    height: 100px;
     font-size: 1.20em;
-    width: 130px;
 }
 
 #resultado{
     padding-top: 100px;
-    padding-left: 300px;
 }
 
 footer{
@@ -124,7 +126,7 @@ footer{
     color: black;
     height: 60px;
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 
 footer p{
